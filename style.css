@@ -1,0 +1,103 @@
+body {
+  background-image: url("https://w0.peakpx.com/wallpaper/301/338/HD-wallpaper-cloud-cumulus-nimbus-nuvem-nuvens-thumbnail.jpg");
+  background-size: cover;
+}
+h1 {
+  font-size: 100px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+form {
+  text-align: center;
+}
+.search {
+  background-color: #f9f7fe;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 10px;
+  width: 25%;
+  border-radius: 6px;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.submit {
+  padding: 10px;
+  border-radius: 50px;
+  margin: 20px auto;
+  line-height: 1;
+  border: none;
+  display: inline-block;
+}
+.submit:hover {
+  cursor: pointer;
+}
+.square1 {
+  width: 300px;
+  height: 200px;
+  background-color: #046cbb;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  border-radius: 15px;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  margin: 0;
+  margin-left: -30px;
+  position: relative;
+  font-weight: 900px;
+  color: white;
+}
+.hour {
+  font-size: 25px;
+  font-weight: 100;
+}
+.emoji {
+  position: relative;
+  top: -160px;
+  font-size: 60px;
+  margin-right: 10px;
+  margin-left: 250px;
+}
+.degrees {
+  position: relative;
+  top: -220px;
+  font-size: 40px;
+  margin-right: 10px;
+  margin-left: 250px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.otherValues {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  margin: 0;
+  margin-left: -30px;
+  position: relative;
+  font-weight: 900px;
+  color: white;
+  top: -250px;
+}
+.humidity,
+.windSpeed {
+  font-weight: 700;
+}
+footer {
+  font-size: 15px;
+  font-family: "Nanum Gothic Coding", monospace;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+.links {
+  color: #046cbb;
+}
