@@ -3,8 +3,8 @@ let hours = hour.getHours();
 let minutes = hour.getMinutes();
 
 let hour1 = document.querySelector("#hour");
-if (minutes < 10) {
-  hour1.innerHTML = `${hours}:0${minutes}`;
+if (hours < 10) {
+  hour1.innerHTML = `0${hours}:${minutes}`;
 } else {
   hour1.innerHTML = `${hours}:${minutes}`;
 }
