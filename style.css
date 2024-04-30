@@ -44,7 +44,8 @@ form {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
-  padding: 80px;
+  padding: 150px;
+  padding-right: 280px;
   padding-bottom: 180px;
   border-radius: 15px;
 }
@@ -53,7 +54,8 @@ h2 {
   font-family: "Open Sans", sans-serif;
   text-align: left;
   margin: -10px;
-  margin-left: -30px;
+  margin-left: -120px;
+  margin-top: -130px;
   position: relative;
   font-weight: 900px;
   color: white;
@@ -63,7 +65,7 @@ h2 {
   font-weight: 100;
   text-align: left;
   margin: 15px;
-  margin-left: -30px;
+  margin-left: -120px;
   position: relative;
   font-weight: 900px;
   color: white;
@@ -71,18 +73,18 @@ h2 {
 .emoji {
   position: relative;
   top: -140px;
-  font-size: 60px;
-  margin-right: 10px;
-  margin-left: 250px;
+  font-size: 70px;
+  margin-right: 100px;
+  margin-left: 210px;
 }
 .degrees {
   position: relative;
-  top: -200px;
+  top: -190px;
   margin-right: 10px;
-  margin-left: 250px;
+  margin-left: 230px;
   color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 .value1,
 .value2,
@@ -91,11 +93,11 @@ h2 {
   font-family: "Open Sans", sans-serif;
   text-align: left;
   margin: 0;
-  margin-left: -30px;
+  margin-left: -130px;
   position: relative;
   font-weight: 900px;
   color: white;
-  top: -180px;
+  top: -150px;
   padding-bottom: -200px;
 }
 
@@ -106,6 +108,26 @@ h2 {
 .windSpeed {
   font-weight: 700;
 }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+li {
+  max-width: 20px;
+  margin-left: 60px;
+  margin-right: 40px;
+  margin-top: -200px;
+}
+li:first-child {
+  margin-left: -10;
+}
+
 footer {
   font-size: 15px;
   font-family: "Nanum Gothic Coding", monospace;
@@ -114,6 +136,6 @@ footer {
   margin: 20px;
 }
 .links {
-  color: #bdd0f0;
+  color: #046cbb;
   text-decoration: none;
 }
