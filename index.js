@@ -1,18 +1,30 @@
 function updateWeather(response) {
   let time = new Date(response.data.time);
-  let degree = document.querySelector("#degrees");
-  let cityPlace = document.querySelector("#city1");
-  let description = document.querySelector("#description");
-  let humidity = document.querySelector("#humidity");
-  let windSpeed = document.querySelector("#windSpeed");
-  let hourDay = document.querySelector("#hourDay");
 
+  let degree = document.querySelector("#degrees");
   degree.innerHTML = `${Math.round(response.data.temperature.current)}ºC`;
+
+  let cityPlace = document.querySelector("#city1");
   cityPlace.innerHTML = response.data.city;
+
+  let description = document.querySelector("#description");
   description.innerHTML = response.data.condition.description;
+
+  let humidity = document.querySelector("#humidity");
   humidity.innerHTML = `${Math.round(response.data.temperature.humidity)}%`;
+
+  let windSpeed = document.querySelector("#windSpeed");
   windSpeed.innerHTML = `${Math.round(response.data.wind.speed)} km`;
+
+  let hourDay = document.querySelector("#hourDay");
   hourDay.innerHTML = formatDate(time);
+
+  let emoji = document.querySelector("#emoji");
+  let emojiElement = `<img
+                src="${response.data.condition.icon_url}"
+                class="emoji"
+              />`;
+  emoji.innerHTML = emojiElement;
 }
 
 function formatDate(hourDay) {
@@ -37,9 +49,9 @@ function formatDate(hourDay) {
     minutes = `0${minutes}`;
   }
 
- 
   return `${day}, ${hours}:${minutes}`;
 }
+
 function tempSearch(city) {
   let apiKey = "o3bfb209f55e8951210f40e6476fat3f";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -56,3 +68,5 @@ let searchForm = document.querySelector("#cityForm");
 searchForm.addEventListener("submit", searchInput);
 
 tempSearch("Brasília");
+
+console.log(apiUrl);

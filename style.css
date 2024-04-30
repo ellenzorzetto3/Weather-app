@@ -70,14 +70,14 @@ h2 {
 }
 .emoji {
   position: relative;
-  top: -180px;
+  top: -140px;
   font-size: 60px;
   margin-right: 10px;
   margin-left: 250px;
 }
 .degrees {
   position: relative;
-  top: -220px;
+  top: -200px;
   margin-right: 10px;
   margin-left: 250px;
   color: white;
